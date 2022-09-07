@@ -1,7 +1,6 @@
 package projecteuler;
 
 import java.math.BigInteger;
-import java.util.HashMap;
 
 public class Problem3 {
 
@@ -12,11 +11,11 @@ public class Problem3 {
 		while(!factor.equals(number)) {
 			while(number.mod(factor).equals(BigInteger.ZERO)) {
 				number = number.divide(factor);
+				System.out.println(number);
 			}
 			factor = factor.add(BigInteger.ONE);
 			biggestPrime = factor;
 		}
 		System.out.println(biggestPrime);
 	}
-
 }
