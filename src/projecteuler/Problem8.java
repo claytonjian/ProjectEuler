@@ -1,5 +1,8 @@
 package projecteuler;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Problem8 {
 
 	public static void main(String[] args) {
@@ -16,7 +19,9 @@ public class Problem8 {
 				highestProduct = runningProduct;
 			}
 		}
-		System.out.println(highestProduct);
+		BigDecimal num = new BigDecimal(1);
+		BigDecimal denom = new BigDecimal(3);
+		System.out.println(num.divide(denom, 100, RoundingMode.HALF_UP));
 	}
 
 }
