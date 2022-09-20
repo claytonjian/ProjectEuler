@@ -15,5 +15,4 @@ public class Problem15 {
 		}
 		System.out.println(paths);
 	}
-
 }
