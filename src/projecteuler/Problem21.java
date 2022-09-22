@@ -17,15 +17,13 @@ public class Problem21 {
 	}
 	public static int sumOfProperDivisors(int num) {
 		int sum = 0;
-		for(int i = 1; i <= (int)Math.sqrt(num); i++) {
+		System.out.println("Num: " + num);
+		for(int i = 1; i < num; i++) {
 			if(num % i == 0) {
-				sum += i + (num/i);
-			}
-			if(i * i == num) {
-				sum /= i;
+				System.out.println(i);
+				sum += i;
 			}
 		}
-		sum -= num;
 		return sum;
 	}
 }
